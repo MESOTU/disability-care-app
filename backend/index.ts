@@ -8,9 +8,11 @@ const port = process.env.PORT || 3001;
 const prisma = new PrismaClient();
 
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? 'https://your-frontend-url.vercel.app' 
-    : ['http://localhost:5173', 'http://localhost:5174', 'https://disability-care-app.vercel.app'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'https://disability-care-app.vercel.app'
+  ],
   credentials: true
 }));
 app.use(helmet()); 
