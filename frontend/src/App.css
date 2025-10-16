@@ -1,0 +1,92 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.form-section, .participants-section {
+  background: #f8f9fa;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.participant-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.participant-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.participant-form button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.participant-form button:hover {
+  background: #0056b3;
+}
+
+.participants-list {
+  display: grid;
+  gap: 15px;
+}
+
+.participant-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.participant-card h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.participant-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.participant-card small {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px 0;
+  border: 1px solid #c3e6cb;
+}
